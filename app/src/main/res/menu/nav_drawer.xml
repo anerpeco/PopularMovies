@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_popular"
+            android:title="@string/nav_popular_title"
+            android:checked="true"
+            />
+        <item
+            android:id="@+id/nav_top_rated"
+            android:title="@string/nav_top_rated_title"
+            />
+        <item
+            android:id="@+id/nav_favorite"
+            android:title="@string/nav_favorite_title"
+            />
+    </group>
+</menu>

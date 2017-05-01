@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextViewTitle" parent="TextViewContent">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorTitle</item>
+    </style>
+
+    <style name="TextViewContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextViewTitleLand" parent="TextViewContentLand">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorTitle</item>
+    </style>
+
+    <style name="TextViewContentLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">33sp</item>
+    </style>
+
+    <style name="ErrorMessageDisplay">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:text">@string/error_message</item>
+    </style>
+
+    <style name="LoadingIndicator">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+</resources>

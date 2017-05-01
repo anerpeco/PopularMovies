@@ -1,0 +1,126 @@
+ <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.popmovies.fragments.OverviewFragment">
+
+        <ImageView
+            android:id="@+id/imageView_backdrop"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/vikings"
+            android:contentDescription="@string/description_movie_backdrop"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageview_poster"
+            android:layout_width="247dp"
+            android:layout_height="376dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="3"
+            android:contentDescription="@string/description_movie_poster"
+            android:src="@drawable/vikings"
+            android:layout_marginTop="4dp" />
+
+        <ImageView
+            android:id="@+id/imageview_favourite"
+            android:layout_width="70dp"
+            android:layout_height="96dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="6.10"
+            android:foregroundGravity="right"
+            android:paddingBottom="20dp"
+            android:src="@android:drawable/btn_star_big_off"
+            android:contentDescription="@string/description_favorite_button"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/textview_vote_average_title"
+            android:layout_toEndOf="@id/textview_vote_average_title"/>
+
+        <TextView
+            android:id="@+id/textview_release_date_title"
+            style="@style/TextViewTitleLand"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/heading_release_date"
+            android:layout_toRightOf="@id/imageview_poster"
+            android:layout_toEndOf="@id/imageview_poster"/>
+
+        <TextView
+            android:id="@+id/textview_release_date"
+            style="@style/TextViewContentLand"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/example_release_date"
+            android:layout_toRightOf="@id/imageview_poster"
+            android:layout_toEndOf="@id/imageview_poster"
+            android:layout_below="@id/textview_release_date_title"/>
+
+        <TextView
+            android:id="@+id/textview_vote_average_title"
+            style="@style/TextViewTitleLand"
+            android:layout_marginStart="16dp"
+            android:text="@string/heading_vote_average"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/textview_release_date_title"
+            android:layout_toEndOf="@id/textview_release_date_title"/>
+
+        <TextView
+            android:id="@+id/textview_vote_average"
+            style="@style/TextViewContentLand"
+            android:layout_marginStart="16dp"
+            android:text="@string/example_vote_average"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/textview_release_date_title"
+            android:layout_toEndOf="@id/textview_release_date_title"
+            android:layout_below="@id/textview_vote_average_title"/>
+
+        <TextView
+            android:id="@+id/textview_original_title"
+            style="@style/TextViewTitleLand"
+            android:layout_marginStart="16dp"
+            android:text="@string/example_original_title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/imageview_poster"
+            android:layout_toEndOf="@id/imageview_poster"
+            android:layout_below="@id/textview_release_date"/>
+
+        <TextView
+            android:id="@+id/overview_title"
+            style="@style/TextViewTitleLand"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/overview_title"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textview_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/example_overview"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:maxLines="6"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_toRightOf="@id/imageview_poster"
+            android:layout_toEndOf="@id/imageview_poster"
+            android:layout_below="@id/textview_original_title"/>
+
+    </RelativeLayout>
